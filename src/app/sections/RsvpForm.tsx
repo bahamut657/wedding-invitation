@@ -4,22 +4,27 @@ import { FormEvent } from "react";
 import dictionary from "../../dictionary.json"
 import { fontTitle } from '../fonts';
 
+type SubmitNativeEventOverride = Event & {
+  submitter: HTMLButtonElement;
+}
+const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
+  event.preventDefault();
+  const triggerButton = (event.nativeEvent as SubmitNativeEventOverride).submitter;
+
+  if (triggerButton.id === "accept") {
+    //accept invitation
+    alert("ACCEPT")
+  } else {
+    //decline invitation
+    alert("DECLINE")
+  }
+
+  return false;
+}
 
 const RsvpForm = () => {
 
-  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-    const triggerButton = (event.nativeEvent as any).submitter as HTMLButtonElement;
 
-    if (triggerButton.id === "accept") {
-      //accept invitation
-      alert("ACCEPT")
-    } else {
-      //decline invitation
-      alert("DECLINE")
-    }
-    return false;
-  }
 
   return <div className="section flex flex-1 flex-col grow bg-light">
     <div className="section-content flex flex-col flex-1 grow">
