@@ -1,0 +1,75 @@
+{
+  "meta": {
+    "title": "Jo e Papo - Matrimonio 2025",
+    "description": "Invito personale alle celebrazioni di matrimonio di Giovannella e Jacopo"
+  },
+  "weddingInfo": {
+    "date": "31 Marzo 2025",
+    "time": "10:00",
+    "cerimony": {
+      "location": "Comune di Montecatini Terme",
+      "description": "La cerimonia avverra' presso l'Anagrafe di Montecatini Terme",
+      "gmapURL": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1977.5689934029!2d10.770758563121957!3d43.88651885129125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132a7d669f9ec007%3A0xb9312c63d922e7b4!2sPalazzina%20Regia%2C%20Viale%20Giuseppe%20Verdi%2C%2041%2C%2051016%20Montecatini%20Terme%20PT!5e0!3m2!1sen!2sit!4v1739231387238!5m2!1sen!2sit"
+    }
+  },
+  "sections": {
+    "title": {
+      "title": [
+        "Giovannella & Jacopo"
+      ]
+    },
+    "main": {
+      "title": [
+        "Il grande",
+        "giorno"
+      ],
+      "buttonLabel": "Conferma"
+    },
+    "location": {
+      "title": [
+        "Dove",
+        "siamo"
+      ]
+    },
+    "gifts": {
+      "title": [
+        "Regalo di",
+        "Nozze"
+      ],
+      "description": "Sappiate, che vi vogliamo tanto bene!!",
+      "iban": "IT123123232131123"
+    },
+    "rsvp": {
+      "title": [
+        "Conferma",
+        "partecipazione"
+      ],
+      "subtitle": "Non dimenticare di confermare la tua presenza compilando questo form",
+      "form": {
+        "partecipant": {
+          "label": "Nome",
+          "placeholder": "Mario Rossi",
+          "type": "text"
+        },
+        "partecipant_number": {
+          "label": "Persone",
+          "type": "select",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6"
+          ]
+        },
+        "additional_info": {
+          "label": "Preferenze pranzo e/o allergie",
+          "placeholder": "1x celiaco\n1x vegetariano"
+        },
+        "buttonAccept": "Ci saro'",
+        "buttonDecline": "Non potro' partecipare"
+      }
+    }
+  }
+}
