@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 
 import dictionary from "../../dictionary.json"
 import RsvpForm from "./RsvpForm";
-export const experimental_ppr = true
 
 const Loader = () => <div
   className="section flex flex-1 flex-col grow bg-light size-1vw"
