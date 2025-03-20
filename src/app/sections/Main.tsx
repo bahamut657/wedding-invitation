@@ -8,7 +8,7 @@ const Main = () =>
   <div className="section-content h-full bg-blue">
     <div className="main-title">
       <h1 className={`${fontTitle.className}`}>
-        {dictionary.sections.main.title[0]}&nbsp;
+        {dictionary.sections.main.title[0]}{" "}
         <span className="text-yellow">
           {dictionary.sections.main.title[1]}
         </span>
@@ -31,11 +31,12 @@ const Main = () =>
     </div>
     <div className="flex main-actions mt-10 ">
       <div className="flex flex-1 justify-center">
-        <button
-          className="px-6 py-2 bg-yellow text-blue"
+        <a
+          href="#rsvp"
+          className="px-10 py-6 bg-yellow text-blue"
           type="button">
           {dictionary.sections.main.buttonLabel}
-        </button>
+        </a>
       </div>
     </div>
   </div>

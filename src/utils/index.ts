@@ -1,7 +1,9 @@
-import delay from "./delay";
+import replaceEmailPlaceholders from "./replaceEmailPlaceholders";
+import sendEmail from "./sendEmail";
 
 const utils = {
-  delay
+  replaceEmailPlaceholders,
+  sendEmail
 }
 
 export default utils

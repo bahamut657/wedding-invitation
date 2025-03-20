@@ -5,7 +5,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import dictionary from "../dictionary.json"
 
-const {title,description}=dictionary.meta
+const { title, description } = dictionary.meta
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 };
 
 import type { Viewport } from 'next'
- 
+
 export const viewport: Viewport = {
   width: 'device-width',
   initialScale: 1,
@@ -40,7 +40,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="it">
-      
+
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

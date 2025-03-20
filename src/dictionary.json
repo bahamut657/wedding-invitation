@@ -1,58 +1,120 @@
 {
   "meta": {
-    "title": "Jo e Papo - Matrimonio 2025",
-    "description": "Invito personale alle celebrazioni di matrimonio di Giovannella e Jacopo"
+    "title": "Template Title",
+    "description": "Template description for the wedding invitation of [Bride] and [Groom]"
   },
   "weddingInfo": {
-    "date": "31 Marzo 2025",
-    "time": "10:00",
+    "date": "DD Month YYYY",
+    "time": "HH:MM",
     "cerimony": {
-      "location": "Comune di Montecatini Terme",
-      "description": "La cerimonia avverra' presso l'Anagrafe di Montecatini Terme",
-      "gmapURL": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1977.5689934029!2d10.770758563121957!3d43.88651885129125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132a7d669f9ec007%3A0xb9312c63d922e7b4!2sPalazzina%20Regia%2C%20Viale%20Giuseppe%20Verdi%2C%2041%2C%2051016%20Montecatini%20Terme%20PT!5e0!3m2!1sen!2sit!4v1739231387238!5m2!1sen!2sit"
+      "location": "Ceremony Location",
+      "description": "Description of the ceremony location and details",
+      "gmapURL": "https://www.google.com/maps/embed?pb=FakeGoogleMapsURL"
+    },
+    "party": {
+      "location": "Party Location",
+      "description": "Description of the party location and details",
+      "gmapURL": "https://www.google.com/maps/embed?pb=FakeGoogleMapsURL"
+    }
+  },
+  "email": {
+    "config": {
+      "method": "POST",
+      "url": "https://api.fakeemailservice.com/v3/smtp/email",
+      "headers": {
+        "api-key": "fake-api-key",
+        "Content-Type": "application/json"
+      },
+      "sender": {
+        "name": "Template Sender Name",
+        "email": "template.sender@example.com"
+      },
+      "recipients": [
+        {
+          "email": "recipient1@example.com",
+          "name": "Recipient 1"
+        },
+        {
+          "email": "recipient2@example.com",
+          "name": "Recipient 2"
+        }
+      ]
+    },
+    "template": {
+      "accepted": {
+        "name": "Template Accepted Email Name",
+        "subject": "Template Accepted Subject",
+        "html": "<h1>Template Accepted Email</h1><p><strong>{{partecipant}}</strong> has confirmed attendance</p><p>Number of guests: {{partecipant_number}}</p><br /><div><h4>Notes</h4><p>{{additional_info}}</p></div><br /><p align='right'>{{currentDate}}</p>"
+      },
+      "declined": {
+        "name": "Template Declined Email Name",
+        "subject": "Template Declined Subject",
+        "html": "<h1 style='color: #780c28;'>Template Declined Email</h1><p><strong>{{partecipant}}</strong> will not attend</p><p>Number of guests: {{partecipant_number}}</p><br /><div><h4>Notes</h4><p>{{additional_info}}</p></div><br /><p align='right'>{{currentDate}}</p>"
+      }
+    },
+    "messages": {
+      "loading": {
+        "title": "Loading message title...",
+        "subtitle": "Loading message subtitle"
+      },
+      "error": {
+        "title": "Error message title",
+        "subtitle": "Error message subtitle"
+      },
+      "success": {
+        "title": "Success message title",
+        "subtitle": "Success message subtitle"
+      }
     }
   },
   "sections": {
     "title": {
       "title": [
-        "Giovannella & Jacopo"
+        "Template Bride & Groom"
       ]
     },
     "main": {
       "title": [
-        "Il grande",
-        "giorno"
+        "The Big",
+        "Day"
       ],
-      "buttonLabel": "Conferma"
+      "buttonLabel": "Confirm"
     },
     "location": {
       "title": [
-        "Dove",
-        "siamo"
+        "The",
+        "Ceremony"
+      ]
+    },
+    "party": {
+      "title": [
+        "The",
+        "Reception"
       ]
     },
     "gifts": {
       "title": [
-        "Regalo di",
-        "Nozze"
+        "No toasters...",
+        "we promise!"
       ],
-      "description": "Sappiate, che vi vogliamo tanto bene!!",
-      "iban": "IT123123232131123"
+      "description": "We love you all so much!!",
+      "iban": "IT00FAKEIBAN1234567890"
     },
     "rsvp": {
       "title": [
-        "Conferma",
-        "partecipazione"
+        "Will",
+        "you come?"
       ],
-      "subtitle": "Non dimenticare di confermare la tua presenza compilando questo form",
+      "waiting": "Loading....wait a moment",
+      "subtitle": "Don't forget to confirm your attendance by filling out this form",
       "form": {
         "partecipant": {
-          "label": "Nome",
-          "placeholder": "Mario Rossi",
+          "label": "Name",
+          "placeholder": "John Doe",
           "type": "text"
         },
         "partecipant_number": {
-          "label": "Persone",
+          "label": "Guests",
           "type": "select",
           "options": [
             "1",
@@ -64,11 +126,11 @@
           ]
         },
         "additional_info": {
-          "label": "Preferenze pranzo e/o allergie",
-          "placeholder": "1x celiaco\n1x vegetariano"
+          "label": "Meal preferences, allergies, notes",
+          "placeholder": "1x gluten-free\n1x vegetarian"
         },
-        "buttonAccept": "Ci saro'",
-        "buttonDecline": "Non potro' partecipare"
+        "buttonAccept": "I will attend",
+        "buttonDecline": "I cannot attend"
       }
     }
   }

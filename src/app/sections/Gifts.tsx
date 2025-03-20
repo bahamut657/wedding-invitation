@@ -5,10 +5,10 @@ import dictionary from "../../dictionary.json"
 import { fontTitle } from '../fonts';
 
 const Gifts = () => <div className="section flex h-full flex-col grow alternate2 ">
-  <div className="section-content h-full grow bg-blue">
+  <div className="section-content h-full grow bg-blue gifts">
     <div className="main-title justify-items-start mb-10">
-      <h1 className={`${fontTitle.className}`}>
-        {dictionary.sections.gifts.title[0]}&nbsp;
+      <h1 className={`${fontTitle.className}`} style={{ fontSize: "5rem", lineHeight: "5rem" }}>
+        {dictionary.sections.gifts.title[0]}{" "}
         <span className="text-yellow">
           {dictionary.sections.gifts.title[1]}
         </span>

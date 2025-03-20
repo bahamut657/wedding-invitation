@@ -1,11 +1,15 @@
 
+import dictionary from "../dictionary.json"
 import { fontText } from './fonts';
 import Gifts from './sections/Gifts';
 import Location from './sections/Location';
 import Main from "./sections/Main"
 import Map from './sections/Map';
+import Party from './sections/Party';
 import Rsvp from './sections/Rsvp';
 import Title from './sections/Title';
+
+const { cerimony, party } = dictionary.weddingInfo;
 
 export default function Home() {
   return (<div
@@ -16,12 +20,20 @@ export default function Home() {
       <Title />
       <Main />
     </div>
-    <Location />
-    <Map />
+    <div
+      className="section flex h-full flex-col grow  flex-wrap snow">
+      <Location />
+    </div>
+    <Map url={cerimony.gmapURL} />
+    <div
+      className="section flex h-full flex-col grow  flex-wrap snow">
+      <Party />
+    </div>
+    <Map url={party.gmapURL} />
     <Gifts />
 
     <Rsvp />
-  </div>
+  </div >
   );
 }
 
