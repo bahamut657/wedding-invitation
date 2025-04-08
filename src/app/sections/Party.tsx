@@ -8,6 +8,12 @@ const { party } = dictionary.sections;
 const Party = () => <div className="section flex h-full flex-col grow bg-light snow-content">
   <div className="section-content flex-1 grow lunch">
     <div className="main-title">
+      {!!dictionary.sections.party.description &&
+        <div className="text-right text-gray  pr-8">
+          <h2 className='override  pr-8'>
+            {dictionary.sections.party.description}
+          </h2>
+        </div>}
       <h1
         className={`${fontTitle.className} text-yellow whitespace-break-spaces`}>
         {party.title[0]}{" "}
@@ -17,6 +23,8 @@ const Party = () => <div className="section flex h-full flex-col grow bg-light s
         </span>
       </h1>
     </div>
+
+
     <div className="main-entry flex flex-row justify-items-center items-center mt-8 text-yellow ">
       <div >
         <FontAwesomeIcon
@@ -24,6 +32,7 @@ const Party = () => <div className="section flex h-full flex-col grow bg-light s
           className="icon"
         />
       </div>
+
       <div className="pl-4 flex-1 flex flex-col">
         <h2
           className={`${fontSubTitle.className} mt-4 text-blue`}>

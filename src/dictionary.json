@@ -105,6 +105,7 @@
         "Will",
         "you come?"
       ],
+      "expireInfo":"Expire at December 25th 2025",
       "waiting": "Loading....wait a moment",
       "subtitle": "Don't forget to confirm your attendance by filling out this form",
       "form": {

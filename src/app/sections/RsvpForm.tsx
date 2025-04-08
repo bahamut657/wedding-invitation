@@ -108,16 +108,21 @@ const RsvpForm = () => {
       </div>
       <div className="main-entry flex flex-col justify-items-center items-center mt-8 text-blue subtitle">
         <div>
+
           <p>
             {dictionary.sections.rsvp.subtitle}
           </p>
+          <p className="text-gray text-center">
+            <i>
+              <strong>
+                {dictionary.sections.rsvp.expireInfo}
+              </strong>
+            </i>
+          </p>
+
         </div>
 
-        <div>
-          {dictionary.weddingInfo.date}
-          &nbsp;
-          {dictionary.weddingInfo.time}
-        </div>
+
 
       </div>
       <div className="flex flex-1 main-actions mt-10 ">
@@ -170,9 +175,17 @@ const RsvpForm = () => {
               placeholder={dictionary.sections.rsvp.form.additional_info.placeholder}
               rows={5}
             />
-            <br /><br />
+
+            <br />
+            <br />
+            <div className="text-gray flex justify-center items-center">
+              {dictionary.weddingInfo.date}
+              &nbsp;
+              {dictionary.weddingInfo.time}
+            </div>
             <br />
             <div className="flex justify-center items-center gap-4">
+
               <button
                 className="px-6 py-2 bg-yellow text-blue"
                 type="submit"
@@ -198,6 +211,7 @@ const RsvpForm = () => {
                 &nbsp;
                 {dictionary.sections.rsvp.form.buttonDecline}
               </button>
+
             </div>
           </form>
 

@@ -16,6 +16,7 @@
   --alternate2: #6E8E59;
   --yellow: #ebc429;
   --light: #EAFAEA;
+  --gray: #444444;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -62,6 +63,10 @@ h2 {
 
 .bg-yellow {
   background: var(--yellow);
+}
+
+.text-gray {
+  color: var(--gray);
 }
 
 .text-blue {
@@ -132,14 +137,29 @@ h2 {
       font-weight: bold;
       line-height: 7rem;
       text-align: left;
+      white-space: break-spaces;
     }
 
     h2 {
       font-size: 2.5rem;
       font-weight: bold;
+      line-height: 2rem;
+    }
+
+
+
+    h2.override {
+      font-size: 4rem;
+      font-weight: bold;
+      transform: rotate(20deg);
+      line-height: 4rem;
     }
 
   }
+
+  /* .gifts h2.subtitle {
+    font-size: 1.5rem;
+  } */
 
   .section-content.alternate {
     h2 {
@@ -155,29 +175,47 @@ h2 {
 
 }
 
+.invitation-title {
+  height: 100%;
+  background: url("/wedding-couple.svg") 50% 450% no-repeat;
+  background-size: auto 90%;
+
+}
+
 .lunch {
   background: url("/wedding-lunch.svg") 100% 0 no-repeat;
 }
 
 .gifts {
   background-image: url("/wedding-gifts.svg");
-  background-position: 100% 0;
+  background-position: 100% 100%;
+
   background-repeat: no-repeat;
+
 }
 
 @media screen and (max-width: 768px) {
+
+  .gifts {
+    background-blend-mode: soft-light;
+  }
+
+  .invitation-title {
+    background-position: 50% 500%;
+
+  }
+
   .main-container {
 
     .section-content {
       padding: 4rem 1rem;
 
       h1 {
-        font-size: 5rem;
+        font-size: 4.5rem;
         line-height: 5rem;
       }
     }
   }
-
 
 
   .gifts,
@@ -191,4 +229,11 @@ h2 {
     line-height: 2rem;
   }
 
+  /* .gifts h2.subtitle {
+    font-size: 1.5rem;
+  } */
+
+  h2.override {
+    background: white;
+  }
 }
