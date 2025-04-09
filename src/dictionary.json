@@ -98,14 +98,15 @@
         "we promise!"
       ],
       "description": "We love you all so much!!",
-      "iban": "IT00FAKEIBAN1234567890"
+      "iban": "IT00FAKEIBAN1234567890",
+      "ibanOwner": "Owner Name"
     },
     "rsvp": {
       "title": [
         "Will",
         "you come?"
       ],
-      "expireInfo":"Expire at December 25th 2025",
+      "expireInfo": "Expire at December 25th 2025",
       "waiting": "Loading....wait a moment",
       "subtitle": "Don't forget to confirm your attendance by filling out this form",
       "form": {

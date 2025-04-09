@@ -211,7 +211,7 @@ h2 {
       padding: 4rem 1rem;
 
       h1 {
-        font-size: 4.5rem;
+        font-size: 4rem;
         line-height: 5rem;
       }
     }
@@ -229,9 +229,9 @@ h2 {
     line-height: 2rem;
   }
 
-  /* .gifts h2.subtitle {
+  .gifts h2.subtitle {
     font-size: 1.5rem;
-  } */
+  }
 
   h2.override {
     background: white;

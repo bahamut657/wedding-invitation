@@ -27,7 +27,13 @@ const Gifts = () => <div className="section flex h-full flex-col grow alternate2
         <br /><br />
         <p className="subtitle text-yellow" style={{ textShadow: "1px 0 #333" }} >
           <span className="text-white pr-4">IBAN</span>
+          <br />
           {dictionary.sections.gifts.iban}
+          <br />
+          <span className="text-white pr-4">Intestato a</span>
+          <br />
+          {dictionary.sections.gifts.ibanOwner}
+
         </p>
 
       </div>
